@@ -15,8 +15,11 @@ class playEnd(Resource):
         args = parser.parse_args()
 
         query = args['songname']
-
-        self.myPlayer.play(query)
+        print(query)
+        if query.lower() == "stop" or query.lower() == "pause":
+            self.myPlayer.stop()
+        else:
+            self.myPlayer.play(query)
 
         return {"success" : 1}
 

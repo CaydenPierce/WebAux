@@ -25,6 +25,9 @@ class Player:
         Thread(target=self.playThread, args=(url,)).start()
         return 1
 
+    def stop(self):
+        self.playing = False
+        
     def playThread(self, url):
         self.playing = False
         video = pafy.new(url)
@@ -44,7 +47,6 @@ class Player:
         while (str(player.get_state()) in good_states) and (self.playing == True):
             print('Stream is working. Current state = {}'.format(player.get_state()), end="\r")
 
-        print('Stream is done or not working. Current state = {}'.format(player.get_state()))
         player.stop()
         self.playing = False
         self.lock = False

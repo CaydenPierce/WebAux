@@ -4,9 +4,11 @@ This allows anyone on your local network to play songs just by making a quick se
 
 ## How To  
 
-Run the Flask server on the computer that is plugged into the sound system. Pull up the web page in any browser on the local network by typing in the address and port number of the server machine and flask server port. Then search a song and listen to it play.
+Run the Flask server on the computer that is plugged into the sound system. Pull up the web page in any browser on the local network by typing in the address and port number of the server machine and flask server port. Then search a song and listen to it play.  
+
+Submit "stop" as your query to stop the song.  
 
 ## Made By  
-Cayden Pierce
+Cayden Pierce  
 cpierc3 @ uwo . ca
 

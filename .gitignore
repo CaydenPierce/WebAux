@@ -1,0 +1,4 @@
+#virutalenv
+venv/
+#selenium driver log
+geckodriver.log
